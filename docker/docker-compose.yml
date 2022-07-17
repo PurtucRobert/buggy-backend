@@ -21,7 +21,7 @@ services:
       context: ../
       dockerfile: ./docker/app/Dockerfile
       target: dev
-    #restart: always
+    restart: always
     depends_on:
       - db
     environment:

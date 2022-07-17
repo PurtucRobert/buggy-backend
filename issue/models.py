@@ -18,6 +18,7 @@ class Issue(models.Model):
         ('C', 'Closed'),
         ('H', 'On hold'),
     ]
+    title = models.CharField(max_length=255, blank=False)
     status = models.CharField(
         max_length=1, default='N', blank=False, choices=STATUS
     )
